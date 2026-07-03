@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id" class="scroll-smooth">
 <head>
@@ -383,12 +384,14 @@
             'emergency': {
                 icon: '<i class="fa-solid fa-truck-medical text-red-500"></i>',
                 title: 'Emergency Service',
-                desc: 'Layanan tanggap darurat untuk kondisi mobil mogok mendadak di jalan, siang maupun malam. Tim kami siap merespons cepat agar perjalanan Anda tidak terganggu lama.',
+                desc: 'Layanan tanggap darurat 24 jam untuk berbagai kondisi darurat di jalan. Tim kami siap merespons cepat kapan pun Anda membutuhkan.',
                 items: [
                     'Respon cepat 24/7 termasuk hari libur',
                     'Bantuan jump-start aki di lokasi',
                     'Derek darurat jika perbaikan tidak bisa di tempat',
-                    'Koordinasi langsung via WhatsApp/telepon'
+                    'Layanan pecah ban & penggantian ban darurat',
+                    'Bantuan kunci hilang / tertinggal',
+                    'Layanan ambulans'
                 ]
             },
             'inspeksi': {
@@ -496,7 +499,7 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="text-center mb-10 sm:mb-14">
                 <h2 class="text-2xl sm:text-4xl font-bold mb-3 sm:mb-4">Kata <span class="text-brand-500">Pelanggan Kami</span></h2>
-                <a href="https://www.openstreetmap.org/directions?from=&to=-0.0305%2C109.330" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 hover:border-brand-500 transition rounded-full px-5 py-2.5">
+                <a href="https://www.openstreetmap.org/directions?from=&to=-0.059398%2C109.316663" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-slate-800 border border-slate-700 hover:border-brand-500 transition rounded-full px-5 py-2.5">
                     <span class="text-yellow-400 tracking-tight text-sm sm:text-base">★★★★★</span>
                     <span class="font-bold text-sm sm:text-base">4.7</span>
                     <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 text-xs ml-1"></i>
@@ -572,7 +575,7 @@
                             <p class="text-slate-400 text-sm">+62 858-2841-7003</p>
                         </div>
                     </div>
-                    <a href="https://www.openstreetmap.org/directions?from=&to=-0.0305%2C109.330" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base transition">
+                    <a href="https://www.openstreetmap.org/directions?from=&to=-0.059398%2C109.316663" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-brand-500 hover:bg-brand-600 text-white px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base transition">
                         <i class="fa-solid fa-diamond-turn-right"></i> Buka di OpenStreetMap
                     </a>
                 </div>
@@ -698,14 +701,14 @@
         var map = L.map('map', {
             attributionControl: true,
             zoomControl: true
-        }).setView([-0.0305, 109.330], 16);
+        }).setView([-0.059398, 109.316663], 16);
 
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
             maxZoom: 19
         }).addTo(map);
 
-        var marker = L.marker([-0.0305, 109.330]).addTo(map);
+        var marker = L.marker([-0.059398, 109.316663]).addTo(map);
         marker.bindPopup('<b>Telpon Bengkel</b><br>Jl. Kesehatan Jalur C No.28C, Pontianak').openPopup();
     })();
 </script>
